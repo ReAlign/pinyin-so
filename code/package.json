@@ -21,6 +21,26 @@
     "do-pub": "cd npm-public && npm publish",
     "pub": "npm run before-pub && npm run do-pub"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "gitDir": "../",
+    "linters": {
+      "src/**/*.js": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+      ]
+    }
+  },
+  "files": [
+    "src",
+    "dist/*.js"
+  ],
   "dependencies": {
     "babel-runtime": "^6.26.0"
   },
