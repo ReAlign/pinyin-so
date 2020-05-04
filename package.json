@@ -1,0 +1,16 @@
+{
+  "name": "pinyin-so",
+  "version": "0.0.1",
+  "main": "dist/pinyin-so.cjs.js",
+  "module": "dist/pinyin-so.esm.js",
+  "unpkg": "dist/pinyin-so.min.js",
+  "files": [
+    "dist/*.js"
+  ],
+  "author": "ReAlign",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ReAlign/pinyin-so/issues"
+  },
+  "homepage": "https://github.com/ReAlign/pinyin-so#readme"
+}
