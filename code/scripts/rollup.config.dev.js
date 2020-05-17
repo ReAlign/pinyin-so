@@ -27,7 +27,7 @@ export default {
     },
     // cjs and esm version
     {
-      file: `./../dist/${rName}.esm.min.min.js`,
+      file: `./../dist/${rName}.esm.min.js`,
       format: 'es',
     }
   ],

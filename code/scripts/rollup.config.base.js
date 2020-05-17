@@ -1,5 +1,6 @@
-// const path = require('path');
-// const resolvePath = pathName => path.join(__dirname, '..', pathName);
+// @ts-nocheck
+const path = require('path');
+const resolvePath = pathName => path.join(__dirname, '..', pathName);
 
 import alias from '@rollup/plugin-alias';
 import resolve from '@rollup/plugin-node-resolve';
@@ -7,6 +8,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 import replace from '@rollup/plugin-replace';
 import json from '@rollup/plugin-json';
+import typescript2 from 'rollup-plugin-typescript2';
 
 import { eslint } from 'rollup-plugin-eslint';
 
@@ -15,10 +17,12 @@ const opts = {
 };
 
 export default {
-  input: 'src/main.js',
+  input: 'src/main.ts',
   plugins: [
     alias({
-      resolve: ['.js'],
+      resolve: ['.js', '.ts'],
+      '@': resolvePath('src'),
+      'res': resolvePath('resources'),
     }),
     json(opts.json),
     replace({
@@ -38,5 +42,6 @@ export default {
       babelHelpers: 'runtime',
       exclude: 'node_modules/**' // only transpile our source code
     }),
+    typescript2(/*{ plugin options }*/)
   ]
 }

@@ -11,15 +11,18 @@
     "start": "concurrently \"npm run dev\" \"npm run serve\"",
     "dev": "yarn run clean && cross-env NODE_ENV=development rollup -w -c scripts/rollup.config.dev.js",
     "build": "yarn run clean && cross-env NODE_ENV=production rollup -c scripts/rollup.config.prod.js",
+    "build-demo": "cd demo && npm run build",
     "test": "npm run flow && jest",
     "flow": "flow check",
-    "serve": "serve -l 1234 ./../",
+    "serve": "cd demo && npm run dev",
     "release": "standard-version",
     "pub-clean": "rm -rf ./npm-public/*",
     "pub-copy-npm": "gulp copy-npm",
     "before-pub": "npm run build && npm run pub-clean && npm run pub-copy-npm",
     "do-pub": "cd npm-public && npm publish",
-    "pub": "npm run before-pub && npm run do-pub"
+    "pub": "npm run before-pub && npm run do-pub",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+    "tslint:fix": "tslint --fix 'src/**/*.ts'"
   },
   "husky": {
     "hooks": {
@@ -82,8 +85,10 @@
     "rollup-plugin-filesize": "^8.0.2",
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.27.1",
     "serve": "^11.3.0",
     "standard-version": "^4.3.0",
+    "typescript": "^3.9.2",
     "uglify-es": "^3.3.4"
   },
   "config": {

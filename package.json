@@ -4,6 +4,20 @@
   "main": "dist/pinyin-so.cjs.js",
   "module": "dist/pinyin-so.esm.js",
   "unpkg": "dist/pinyin-so.min.js",
+  "keywords": [
+    "pinyin",
+    "chinese",
+    "拼音",
+    "全拼",
+    "简拼",
+    "同音字",
+    "match",
+    "so",
+    "search",
+    "拼音搜",
+    "拼音搜索",
+    "中文搜索"
+  ],
   "files": [
     "dist/*.js"
   ],
