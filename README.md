@@ -17,15 +17,14 @@
 
 ```js
 import PinyinSo from 'pinyin-so';
-const pinyinSo = new PinyinSo(options);
 
 /**
- * @name    pinyinSo.so
+ * @name    PinyinSo.so
  * @param   {String}    targetStr   待搜索文本
  * @param   {String}    keyword     搜索关键词
  * @returns {Boolean | Array}       失败结果 或者 结果索引
  */
-const res = pinyinSo.so(`${targetStr}`, `${keyword}`);
+const res = PinyinSo.so(`${targetStr}`, `${keyword}`);
 if(res) {
   const [start, end] = res;
 } else {

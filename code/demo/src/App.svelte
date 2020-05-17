@@ -2,10 +2,9 @@
   import './style/global.css';
   import './style/App.css';
 
-  // import PinyinSo from './../../../dist/pinyin-so.esm.min.js';
-  import PinyinSo from 'pinyin-so';
+  import PinyinSo from './../../../dist/pinyin-so.esm.min.js';
+  // import PinyinSo from 'pinyin-so';
 
-  const pinyinSo = new PinyinSo();
   const no = '<span style="color: #aaa;">[无查询]</span>';
   const oriStr = '疏影横斜水清浅，暗香浮动月黄昏。';
 
@@ -22,7 +21,7 @@
 
   const inputEvt = () => {
     let x = '';
-    const p = pinyinSo.so(oriStr, name.trim());
+    const p = PinyinSo.so(oriStr, name.trim());
 
     if (p) {
       const [start, end] = p;
