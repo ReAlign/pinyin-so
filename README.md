@@ -40,6 +40,6 @@ if(res) {
 * [ ] 优化代码
 * [ ] 发新版
 
-## 参考
+## 参考|感谢
 
-[xmflswood/pinyin-match](https://github.com/xmflswood/pinyin-match)
+* [xmflswood/pinyin-match](https://github.com/xmflswood/pinyin-match)
