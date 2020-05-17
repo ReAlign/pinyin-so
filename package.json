@@ -1,8 +1,8 @@
 {
   "name": "pinyin-so",
-  "version": "0.0.0",
-  "main": "dist/pinyin-so.cjs.js",
-  "module": "dist/pinyin-so.esm.js",
+  "version": "0.0.2",
+  "main": "dist/pinyin-so.cjs.min.js",
+  "module": "dist/pinyin-so.esm.min.js",
   "unpkg": "dist/pinyin-so.min.js",
   "keywords": [
     "pinyin",

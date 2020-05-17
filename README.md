@@ -1,5 +1,7 @@
 # pinyin-so
 
+⚠️⚠️⚠️ 目前为非稳定版本
+
 [![NPM version][npm-image]][npm-url]
 
 [npm-image]: https://img.shields.io/npm/v/pinyin-so.svg?longCache=true&style=for-the-badge

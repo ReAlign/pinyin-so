@@ -2,7 +2,8 @@
   import './style/global.css';
   import './style/App.css';
 
-  import PinyinSo from './../../../dist/pinyin-so.esm.min.js';
+  // import PinyinSo from './../../../dist/pinyin-so.esm.min.js';
+  import PinyinSo from 'pinyin-so';
 
   const pinyinSo = new PinyinSo();
   const no = '<span style="color: #aaa;">[无查询]</span>';
