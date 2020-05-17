@@ -1,10 +1,9 @@
 {
   "name": "pinyin-so",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "dist/pinyin-so.cjs.min.js",
   "module": "dist/pinyin-so.esm.min.js",
   "unpkg": "dist/pinyin-so.min.js",
-  "types": "lib/index.d.ts",
   "keywords": [
     "pinyin",
     "chinese",
@@ -20,7 +19,10 @@
     "中文搜索"
   ],
   "files": [
-    "dist/*.js"
+    "dist/*.js",
+    "index.d.ts",
+    "package.json",
+    "README.md"
   ],
   "author": "ReAlign",
   "license": "MIT",
