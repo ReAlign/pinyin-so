@@ -1,10 +1,10 @@
 {
   "name": "pinyin-so",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/pinyin-so.cjs.min.js",
   "module": "dist/pinyin-so.esm.min.js",
   "unpkg": "dist/pinyin-so.min.js",
-  "types": "./index.d.ts",
+  "types": "lib/index.d.ts",
   "keywords": [
     "pinyin",
     "chinese",
