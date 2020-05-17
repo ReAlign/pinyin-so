@@ -9,6 +9,8 @@
 
 > 拼音搜索方案，支持 全拼/简拼/同音字 等。
 
+![image/normal/2020-05-18/img-1589737460574-6747.png](https://public-bucket-realign.nos-eastchina1.126.net/image/normal/2020-05-18/img-1589737460574-6747.png)
+
 ## Demo
 
 * [svelte-js-app](https://realign.github.io/pinyin-so/code/demo/build)
