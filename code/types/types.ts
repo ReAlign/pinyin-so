@@ -2,13 +2,17 @@ interface IN_CACHE {
   [propName: string]: [];
 }
 
-type IN_TYPE_NUMaARR_or_BOOL = [number, number] | boolean;
+export type IN_TYPE_NUMaARR_or_BOOL = [number, number] | boolean;
 
 export interface IF_OBJ_MATCH {
   match(targetStr: string, keyword: string): IN_TYPE_NUMaARR_or_BOOL;
 }
 
 export interface IF_OBJ_STRING {
+  [propName: string]: string;
+}
+
+export interface IF_MAPS {
   [propName: string]: string;
 }
 

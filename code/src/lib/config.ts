@@ -1,11 +1,13 @@
+import { IF_MAPS } from 'types/types';
 import { maps } from 'res/dictionary.json';
 
 const x = {
-  getDuyin2Words(oriMap = {}) {
+  getDuyin2Words(oriMap: IF_MAPS = {}): IF_MAPS {
     return oriMap;
   },
-  getWord2Duyins(oriMap: any = {}) {
-    const res = {} as any;
+  getWord2Duyins(oriMap: IF_MAPS = {}): IF_MAPS {
+    const res: IF_MAPS = {};
+
     Object.keys(oriMap).forEach((k) => {
       const item = oriMap[k];
       const len = item.length;
@@ -17,6 +19,7 @@ const x = {
         }
       }
     });
+
     return res;
   },
 };
