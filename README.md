@@ -13,8 +13,9 @@
 
 ## Demo
 
-* [svelte-js-app](https://realign.github.io/pinyin-so/code/demo/build)
-* [react-ts-app](https://realign.github.io/pinyin-so/code/demo2/build)
+* [svelte-js-app](https://realign.github.io/pinyin-so/code/demo-svelte/build)
+* [react-ts-app](https://realign.github.io/pinyin-so/code/demo-ts-react/build)
+* [vue-ts-app](https://realign.github.io/pinyin-so/code/demo-ts-vue/build)
 
 ## Usage
 
